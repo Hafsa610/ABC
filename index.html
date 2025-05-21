@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Examples</title>
+</head>
+<body>
+  <script>
+    // 1. Find Even & Odd Numbers with a Loop
+    for (var i = 1; i <= 10; i++) {
+      if (i % 2 === 0) {
+        document.write(i + " is Even<br>");
+      } else {
+        document.write(i + " is Odd<br>");
+      }
+    }
+
+    document.write("<hr>");
+
+    // 2. Nested Loop Example
+    for (var i = 1; i <= 3; i++) {
+      for (var j = 1; j <= 3; j++) {
+        document.write("i = " + i + ", j = " + j + "<br>");
+      }
+    }
+
+    document.write("<hr>");
+
+    // 3. JavaScript Array Example
+    var fruits = ["Apple", "Banana", "Mango"];
+    for (var i = 0; i < fruits.length; i++) {
+      document.write(fruits[i] + "<br>");
+    }
+
+    document.write("<hr>");
+
+    // 4. Multidimensional Array Example
+    var matrix = [
+      [1, 2, 3],
+      [4, 5, 6],
+      [7, 8, 9]
+    ];
+    for (var i = 0; i < matrix.length; i++) {
+      for (var j = 0; j < matrix[i].length; j++) {
+        document.write(matrix[i][j] + " ");
+      }
+      document.write("<br>");
+    }
+
+    document.write("<hr>");
+
+    // 5. Modify & Delete Array Elements
+    var colors = ["Red", "Green", "Blue"];
+    colors[1] = "Yellow"; // Modify
+    colors.splice(2, 1);  // Delete "Blue"
+    document.write(colors); // Output: Red,Yellow
+  </script>
+</body>
+</html>
